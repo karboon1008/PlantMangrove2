@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Collection.Collection_details">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:id="@+id/collection_image"
+        android:layout_height="@dimen/_350sdp"
+        android:src="@drawable/aofficinalis"
+        android:scaleType="centerCrop"
+        android:layout_margin="@dimen/_20sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="TODO">
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+
+        android:id="@+id/Name"
+        app:layout_constraintTop_toBottomOf="@+id/collection_image"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name: "
+            android:textSize="@dimen/_15ssp"
+            android:textStyle="bold"
+            android:id="@+id/coName"
+            android:layout_marginEnd="@dimen/_10sdp"
+            >
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="XXX"
+            android:textSize="@dimen/_15ssp"
+            android:id="@+id/coNameDetails"
+            android:textStyle="italic"
+            >
+        </TextView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:id="@+id/Date"
+        app:layout_constraintTop_toBottomOf="@+id/Name"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date: "
+            android:textSize="@dimen/_15ssp"
+            android:textStyle="bold"
+            android:id="@+id/coDate"
+            android:layout_marginEnd="@dimen/_10sdp"
+            >
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="XXX"
+            android:textSize="@dimen/_15ssp"
+            android:id="@+id/coDateDetails"
+            >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:id="@+id/Location"
+        app:layout_constraintTop_toBottomOf="@+id/Date"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location: "
+            android:textSize="@dimen/_15ssp"
+            android:textStyle="bold"
+            android:id="@+id/coLocation"
+            android:layout_marginEnd="@dimen/_10sdp"
+            >
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="XXX"
+            android:textSize="@dimen/_15ssp"
+            android:id="@+id/coLocationDetails"
+            >
+        </TextView>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="(Click here to open Maps)"
+        android:textStyle="italic"
+        app:layout_constraintTop_toBottomOf="@+id/Location"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        >
+    </TextView>
+</androidx.constraintlayout.widget.ConstraintLayout>

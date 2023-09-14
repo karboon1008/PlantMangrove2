@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn ="navigation_view">
+
+    <group>
+        <item
+            android:id="@+id/navigation_home"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/navigation_mangrovedesc"
+            android:icon="@drawable/ic_baseline_menu_book_24"
+            android:title="Mangrove Plants Description" />
+
+        <item
+            android:id="@+id/navigation_identify"
+            android:icon="@drawable/identify_icon"
+            android:title="Identify" />
+
+        <item
+            android:id="@+id/navigation_collection"
+            android:icon="@drawable/ic_baseline_bookmark_24"
+            android:title="MyCollection" />
+
+        <item
+            android:id="@+id/navigation_map"
+            android:icon="@drawable/ic_baseline_map_24"
+            android:title="Maps" />
+
+        <item
+            android:id="@+id/navigation_chat"
+            android:icon="@drawable/ic_baseline_chat_bubble_24"
+            android:title="Chat" />
+
+    </group>
+
+    <item
+        android:title="">
+
+        <menu>
+            <item
+                android:id="@+id/navigation_guideline"
+                android:icon="@drawable/ic_baseline_help_24"
+                android:title="ReadMe" />
+
+            <item
+                android:id="@+id/navigation_contact"
+                android:icon="@drawable/ic_baseline_people_alt_24"
+                android:title="About Us" />
+
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/ic_baseline_logout_24"
+                android:title="Log Out" />
+
+        </menu>
+    </item>
+</menu>

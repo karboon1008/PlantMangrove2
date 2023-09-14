@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/popup_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/pink">
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Snap Tips"
+            android:textSize="@dimen/_18ssp"
+            android:textColor="@color/purple_700"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_12ssp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="The following will lead to poor results"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="#FF2400"
+            app:layout_constraintTop_toBottomOf="@+id/correct" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/correct"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/snaptips2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title"
+            app:shapeAppearanceOverlay="@style/roundedImageView"/>
+
+
+        <LinearLayout
+            android:id="@+id/layout_23"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_margin="@dimen/_10sdp"
+            app:layout_constraintTop_toBottomOf="@+id/text1"
+
+                >
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/wrong1"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/snaptips4"
+                    app:shapeAppearanceOverlay="@style/roundedImageView"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/_5sdp"
+                    />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/wrong2"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/snaptis3"
+                    app:shapeAppearanceOverlay="@style/roundedImageView"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/_5sdp"
+                    />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/text_23"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            app:layout_constraintTop_toBottomOf="@+id/layout_23" >
+
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bad angle"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text3"
+                    android:gravity="center"
+                    android:text="Blurry"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_45"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:weightSum="2"
+            app:layout_constraintTop_toBottomOf="@+id/text_23"
+                >
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/wrong3"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/snaptips5"
+                    app:shapeAppearanceOverlay="@style/roundedImageView"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/_5sdp"
+                    />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/wrong4"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/snaptips1"
+                    app:shapeAppearanceOverlay="@style/roundedImageView"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/_5sdp"
+                    />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:paddingBottom="@dimen/_20sdp"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            app:layout_constraintTop_toBottomOf="@+id/layout_45"
+                >
+                <TextView
+                    android:id="@+id/text4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Too far"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Not center"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_weight="1" />
+
+        </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
